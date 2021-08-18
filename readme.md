@@ -58,7 +58,37 @@
 
 - Companies that deploy Docker include: Business Insider, Spotify, Yelp, ADP, eBay, Expedia, Groupon, ING, New Relic, The New York Times, Oxford University Press, PayPal. Sage, Shopify, The Washington Post and Uber.
 
+## Docker Commands
 
-## Troubleshooting Docker
+```bash
+docker run -d -p 4000:4000 docs/docker.github.io # run image; -d for detached mode so we can keep working on our terminal while service is still running; -p for which port we want to use; go to localhost:4000 to check the running image
+docker ps # to check running containers
+docker ps -a # to check all containers
+docker exec -it [CONTAINER_ID] sh # to go into container
+docker exec -it [CONTAINER_ID] /bin/bash # to go into container as SUDO
+docker stop [CONTAINER_ID] # Stops container
+docker start [CONTAINER_ID] # Starts container
+docker rm [CONTAINER_ID] # Destroys container
+docker images # Lists images
+docker history [IMAGE_NAME] # Show image history
+docker rmi [IMAGE_NAME] -f # Deletes image, -f if you want to force it
+docker run -d -p 2368:2368 ghost # Run image ghost
+docker run -d -p 80:80 nginx # Run nginx image
+docker cp [source_path] [CONTAINER_ID]:/[destination_path] # Copy index.html to nginx container
+```
+
+### Troubleshooting Docker
 
 - Command to troubleshoot TTY error: `alias docker="winpty docker"`
+
+## Docker Tasks
+
+### Docker Nginx
+
+- Copy index file to nginx default location `docker cp index.html cbfe0e251078:/usr/share/nginx/html`
+
+### Docker Save Changes to Running Container
+
+- Create a new repo in Docker Hub
+
+- 

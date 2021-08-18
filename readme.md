@@ -16,23 +16,28 @@
 	<img src=/imgs/monolith_diagram.jpg>
 </p>
 
-- When to use Monolith?
-	- Small team. If you are a startup and your team is small, you may not need to deal with the complexity of the microservices architecture.
-	- A simple application. Small applications which do not demand much business logic, superior scalability, and flexibility work better with monolithic architectures.
-	- No microservices expertise. Microservices require profound expertise to work well and bring business value.
-	- Quick launch. If you want to develop your application and launch it as soon as possible, a monolithic model is the best choice.
+- When to use **Monolith**?
+	- ***Small team***. If you are a startup and your team is small, you may not need to deal with the complexity of the microservices architecture.
+	- ***A simple application***. Small applications which do not demand much business logic, superior scalability, and flexibility work better with monolithic architectures.
+	- ***No microservices expertise***. Microservices require profound expertise to work well and bring business value.
+	- ***Quick launch***. If you want to develop your application and launch it as soon as possible, a monolithic model is the best choice.
 
-- When to use Microservices?
-	- A complex and scalable application. The microservices architecture will make scaling and adding new capabilities to your application much easier.
-	- Enough skills and expertise. Since a microservice project comprises multiple teams responsible for multiple services, you need to have enough resources to handle all the processes.
+- When to use **Microservices**?
+	- ***A complex and scalable application***. The microservices architecture will make scaling and adding new capabilities to your application much easier.
+	- ***Enough skills and expertise***. Since a microservice project comprises multiple teams responsible for multiple services, you need to have enough resources to handle all the processes.
 
 ## What is Docker
 
-- Docker is an open source containerization platform. It enables developers to package applications into containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+- **Docker is an open source containerization platform**. It enables developers to package applications into containers. 
+- Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
 
 <p align=center>
 	<img src=/imgs/docker_diagram.PNG>
 </p>
+
+- The Docker architecture uses a client-server model and comprises of the Docker Client, Docker Host, Network and Storage components, and the Docker Registry/Hub.
+
+- If the Daemon doesn't find the image on the host, it'll get it from the registry.
 
 ## Why use docker instead of VMs
 

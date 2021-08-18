@@ -7,13 +7,13 @@
 	- Loosely coupled
 
 <p align=center>
-	<img src=microservices_diagram.jpg>
+	<img src=/imgs/microservices_diagram.jpg>
 </p>
 
 ### Microservices vs Monolith Architectures
 
 <p align=center>
-	<img src=monolith_diagram.jpg>
+	<img src=/imgs/monolith_diagram.jpg>
 </p>
 
 - When to use Monolith?
@@ -31,7 +31,7 @@
 - Docker is an open source containerization platform. It enables developers to package applications into containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
 
 <p align=center>
-	<img src=docker_diagram.PNG>
+	<img src=/imgs/docker_diagram.PNG>
 </p>
 
 ## Why use docker instead of VMs
@@ -39,7 +39,7 @@
 - Docker enables developers to easily pack, ship, and run any application as a lightweight, portable, self-sufficient container, which can run virtually anywhere.
 
 <p align=center>
-	<img src=docker_vs_vm.PNG>
+	<img src=/imgs/docker_vs_vm.PNG>
 </p>
 
 - Benefits of Containers:
@@ -49,11 +49,11 @@
 	- Reduced & simplified security updates
 	- Less code to transfer, migrate, upload workloads
 
-
-- Command to troubleshoot TTY error: `alias docker="winpty docker"`
-
 #### Companies using Docker
 
 - Companies that deploy Docker include: Business Insider, Spotify, Yelp, ADP, eBay, Expedia, Groupon, ING, New Relic, The New York Times, Oxford University Press, PayPal. Sage, Shopify, The Washington Post and Uber.
 
-##
+
+### Troubleshooting Docker
+
+- Command to troubleshoot TTY error: `alias docker="winpty docker"`

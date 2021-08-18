@@ -10,7 +10,7 @@
 	<img src=/imgs/microservices_diagram.jpg>
 </p>
 
-### Microservices vs Monolith Architectures
+## Microservices vs Monolith Architectures
 
 <p align=center>
 	<img src=/imgs/monolith_diagram.jpg>
@@ -54,11 +54,11 @@
 	- Reduced & simplified security updates
 	- Less code to transfer, migrate, upload workloads
 
-#### Companies using Docker
+### Companies using Docker
 
 - Companies that deploy Docker include: Business Insider, Spotify, Yelp, ADP, eBay, Expedia, Groupon, ING, New Relic, The New York Times, Oxford University Press, PayPal. Sage, Shopify, The Washington Post and Uber.
 
 
-### Troubleshooting Docker
+## Troubleshooting Docker
 
 - Command to troubleshoot TTY error: `alias docker="winpty docker"`
